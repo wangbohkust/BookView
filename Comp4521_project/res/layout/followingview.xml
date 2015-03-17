@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/editFollowingImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_launcher" />
+    
+    <TextView
+        android:id="@+id/editFollowinggEmailName"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/editFollowingImage"
+        android:gravity="center_vertical"
+        android:text="User Email"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/editFollowingButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/editFollowinggEmailName"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/editFollowingImage"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Following"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/edutFollowingDeleteButton"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editFollowinggEmailName"
+        android:layout_toRightOf="@id/editFollowingButton"
+        android:text="Delete"
+        android:textSize="12sp" />
+    
+</RelativeLayout> 

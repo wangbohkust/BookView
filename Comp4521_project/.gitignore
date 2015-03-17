@@ -1,0 +1,10 @@
+/gen
+/bin
+/libs
+/hs_err_pid2044.log
+/hs_err_pid3616.log
+/hs_err_pid3636.log
+/hs_err_pid5368.log
+/hs_err_pid6488.log
+/proguard-project.txt
+/project.properties

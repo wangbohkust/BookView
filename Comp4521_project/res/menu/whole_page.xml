@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      
+    <item android:id="@+id/action_search"
+          android:title="@string/action_search"
+          android:icon="@drawable/ic_action_search"
+          android:showAsAction="collapseActionView"
+          android:actionViewClass="android.widget.SearchView" />
+    
+     <item android:id="@+id/action_circle"
+          android:title="@string/action_circle"
+          android:icon="@drawable/ic_action_circle"
+          android:showAsAction="always"/>
+     
+    
+     <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

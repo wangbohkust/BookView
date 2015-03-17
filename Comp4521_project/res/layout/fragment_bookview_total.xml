@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/poppgae_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:contentDescription="Image of User"
+        android:src="@drawable/ic_launcher" />
+    
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/icon"
+        android:paddingTop="3dp"
+        android:text="Book name"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/poppgae_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textColor="#33CCFF"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bookid"
+        android:gravity="left|center"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="Original Text:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/poppgae_title"
+        android:layout_below="@+id/poppgae_title"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text=" original text from book"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bookview_detail_comment_title"
+        android:ellipsize="marquee"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="Bookview of users  "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/bookview_detail_comment_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/Bottom"
+        android:layout_below="@+id/firstLine"
+        android:layout_centerVertical="true"
+        android:textColor="#33CCFF"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="Reader Comment:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bookid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookname"
+        android:layout_below="@+id/bookname"
+        android:text="Book ID"
+        android:textSize="20sp" />
+    
+</RelativeLayout> 

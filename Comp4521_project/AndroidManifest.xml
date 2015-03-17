@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hkust.comp4521.project"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="activity.MainActivity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="activity.search.SearchActivity" />
+        </activity>
+        <activity
+            android:name="activity.tabLayout.TabLayout"
+            android:label="@string/app_name"
+            android:parentActivityName="activity.MainActivity.MainActivity">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="activity.search.SearchActivity" />
+        </activity>
+        <activity 
+            android:name="activity.bookview.BookView_One"
+            android:label="@string/app_name"
+            android:parentActivityName="activity.tabLayout.TabLayout">
+        </activity>
+        <activity 
+            android:name="activity.setting.Setting"
+            android:label="@string/app_name"
+            android:parentActivityName="activity.tabLayout.TabLayout">
+        </activity>
+        <activity 
+            android:name="activity.compose.Compose"
+            android:label="@string/app_name"
+            android:parentActivityName="activity.search.SearchAcitivty">
+        </activity>
+        <activity
+            android:name="activity.search.SearchActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="activity.tabLayout.TabLayout"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+         <activity 
+            android:name="activity.social.Social"
+            android:label="@string/app_name"
+            android:parentActivityName="activity.tabLayout.TabLayout">
+        </activity>
+        <activity 
+            android:name="activity.bookcomment.bookcomment"
+            android:label="@string/app_name"
+            android:parentActivityName="activity.search.SearchActivity">
+        </activity>
+        <activity 
+            android:name="activity.social.ListBookBuddyActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="activity.social.Social">
+        </activity>
+         <activity 
+            android:name="activity.social.AddBookBuddyActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="activity.social.Social">
+        </activity>
+    </application>
+
+</manifest>
